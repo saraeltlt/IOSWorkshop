@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture 1" translatesAutoresizingMaskIntoConstraints="NO" id="PXd-gd-wx4">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="PXd-gd-wx4" secondAttribute="height" multiplier="131:284" id="XHB-DS-Hgi"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="-2" width="393" height="854"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Easy To Make Food" translatesAutoresizingMaskIntoConstraints="NO" id="eAd-kx-sCW">
                                 <rect key="frame" x="81" y="415.66666666666669" width="231" height="81"/>
@@ -34,12 +31,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PXd-gd-wx4" secondAttribute="trailing" id="4E3-KJ-Q2H"/>
-                            <constraint firstItem="PXd-gd-wx4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A7V-sY-0bC"/>
                             <constraint firstItem="eAd-kx-sCW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GSL-mM-PBu"/>
                             <constraint firstItem="eAd-kx-sCW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="30" id="GzH-Ao-09D"/>
-                            <constraint firstItem="PXd-gd-wx4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="l8z-0u-Jei"/>
-                            <constraint firstAttribute="bottom" secondItem="PXd-gd-wx4" secondAttribute="bottom" id="pS8-0u-g7R"/>
+                            <constraint firstItem="PXd-gd-wx4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-2" id="MB9-EQ-jLo"/>
+                            <constraint firstAttribute="bottom" secondItem="PXd-gd-wx4" secondAttribute="bottom" id="hSv-01-7uW"/>
+                            <constraint firstItem="PXd-gd-wx4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uWS-zG-Oyq"/>
+                            <constraint firstItem="PXd-gd-wx4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wac-vL-QXe"/>
                         </constraints>
                     </view>
                 </viewController>

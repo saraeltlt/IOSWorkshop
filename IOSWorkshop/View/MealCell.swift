@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MealCell: UITableViewCell {
 
@@ -23,21 +24,28 @@ class MealCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroudView.layer.cornerRadius =  backgroudView.frame.width*0.05
-    
-        bgImage.layer.cornerRadius =  bgImage.frame.width*0.05
-        fadeView.layer.cornerRadius =  fadeView.frame.width*0.05
-        fadeView2.layer.cornerRadius =  fadeView2.frame.width*0.05
+        backgroudView.layer.cornerRadius =  backgroudView.frame.width*0.04
+        bgImage.layer.cornerRadius =  bgImage.frame.width*0.04
+        fadeView.layer.cornerRadius =  fadeView.frame.width*0.04
+        fadeView2.layer.cornerRadius =  fadeView2.frame.width*0.04
+        
       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
     @IBAction func addFavBtn(_ sender: UIButton) {
         print ("tapped")
+    }
+    func configure(meal : StructMealToView){
+        mealNameLabel.text = meal.name
+        mealChefLabel.text = meal.chef
+        mealTypeLabel.text = meal.type
+        mealServingLabel.text = meal.serving
+        bgImage.sd_setImage(with: URL(string: meal.image), placeholderImage: UIImage(named: "placeholder"))
+        
     }
 }

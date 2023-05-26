@@ -7,65 +7,22 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    
-    
+class HomeViewController: UIViewController {
     @IBOutlet weak var categoriesCollection: UICollectionView!
-    
-    
     @IBOutlet weak var mealsTable: UITableView!
-    
-    
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.categoryArray!.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categories", for: indexPath) as! CategoriesViewCell
-        cell.categoryType.text=self.categoryArray![indexPath.row].title
-        cell.categoryImage.image=UIImage(named: categoryArray![indexPath.row].image)
-        cell.container.layer.cornerRadius = 20
-        cell.layer.masksToBounds = true
-        if self.categoryArray![indexPath.row].isSelected{
-            cell.container.backgroundColor=UIColor(named: "Orange")
-        } else {
-            cell.container.backgroundColor = .clear
-        }
-        return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.bounds.width*0.167), height: (collectionView.bounds.height*0.9))
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.1
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 1, left: 10, bottom: 1, right: 10)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let index = indexPath.row
-        self.changeSelectedCellBackground(index: index)
-        print(index)
-    }
-    
-    
+    var viewModel:HomeViewModel?
     var categoryArray:[HomeData]?
+    var dummyData = MealModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewModel =  HomeViewModel()
-/*    viewModel.bindListToHomeViewController = { result in
-            
-        }
- */
+        self.viewModel =  HomeViewModel()
+        viewModel?.mealsData.bind({ [weak self] data in
+            DispatchQueue.main.async {
+                self?.mealsTable.reloadData()
+            }
+        })
+        viewModel?.getMeals(mealCategory: "breakfast")
+
         self.mealsTable.register(UINib(nibName: "MealCell", bundle: nil), forCellReuseIdentifier: "MealCell")
         categoryArray=[HomeData]()
         categoryArray?.append(HomeData(title: "Popular", image: "Popular",isSelected: false))
@@ -77,8 +34,8 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
             if let tabItems = tabBarController.tabBar.items {
                 if tabItems.count >= 2 {
                     let secondTabBarItem = tabItems[1]
-                    secondTabBarItem.image = UIImage(systemName: "star.fill")
-                    secondTabBarItem.title = "Favorite"
+                    secondTabBarItem.image = UIImage(systemName: "heart")
+     
                 }
             }
         }
@@ -118,22 +75,5 @@ class HomeData{
     }
 }
 
-//MARK: -  table view
 
-extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell", for: indexPath) as! MealCell
-        return cell
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //return view.frame.width * 0.6
-        return 180
-    }
-    
-    
-}
+

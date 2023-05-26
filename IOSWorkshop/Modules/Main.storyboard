@@ -42,7 +42,7 @@
                                 <color key="highlightedColor" name="Grey"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CL5-1x-Plq">
-                                <rect key="frame" x="0.0" y="150" width="393" height="119.33333333333331"/>
+                                <rect key="frame" x="0.0" y="135" width="393" height="119.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vtJ-jA-dZJ">
                                     <size key="itemSize" width="128" height="128"/>
@@ -103,8 +103,8 @@
                                     <outlet property="delegate" destination="dFl-iB-i95" id="OHL-r9-mXK"/>
                                 </connections>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Xf-mD-bYc">
-                                <rect key="frame" x="0.0" y="304.33333333333331" width="393" height="547.33333333333348"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Xf-mD-bYc">
+                                <rect key="frame" x="0.0" y="262.33333333333326" width="393" height="504.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="dFl-iB-i95" id="QtV-9G-Ip4"/>
@@ -115,17 +115,17 @@
                         <viewLayoutGuide key="safeArea" id="8wX-7A-CgV"/>
                         <color key="backgroundColor" name="White"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0Xf-mD-bYc" secondAttribute="bottom" constant="85" id="3Ab-wo-IAN"/>
                             <constraint firstItem="CL5-1x-Plq" firstAttribute="trailing" secondItem="8wX-7A-CgV" secondAttribute="trailing" id="3ti-9t-X3H"/>
+                            <constraint firstItem="0Xf-mD-bYc" firstAttribute="top" secondItem="CL5-1x-Plq" secondAttribute="bottom" constant="8" symbolic="YES" id="481-CT-rUX"/>
                             <constraint firstItem="CL5-1x-Plq" firstAttribute="height" secondItem="bIj-OR-5Ed" secondAttribute="height" multiplier="0.14" id="4cA-E7-nH2"/>
+                            <constraint firstItem="0Xf-mD-bYc" firstAttribute="trailing" secondItem="8wX-7A-CgV" secondAttribute="trailing" id="8Ik-nT-Qsk"/>
                             <constraint firstItem="CL5-1x-Plq" firstAttribute="width" secondItem="bIj-OR-5Ed" secondAttribute="width" id="A7N-dc-Ngx"/>
                             <constraint firstItem="CL5-1x-Plq" firstAttribute="leading" secondItem="8wX-7A-CgV" secondAttribute="leading" id="B0q-0q-ZC6"/>
-                            <constraint firstItem="CL5-1x-Plq" firstAttribute="top" secondItem="7ds-XF-i5N" secondAttribute="bottom" constant="20" id="CLv-4g-n8l"/>
-                            <constraint firstItem="0Xf-mD-bYc" firstAttribute="trailing" secondItem="8wX-7A-CgV" secondAttribute="trailing" id="Sq7-8h-uyY"/>
+                            <constraint firstItem="0Xf-mD-bYc" firstAttribute="leading" secondItem="8wX-7A-CgV" secondAttribute="leading" id="B8L-bA-c4j"/>
+                            <constraint firstItem="CL5-1x-Plq" firstAttribute="top" secondItem="7ds-XF-i5N" secondAttribute="bottom" constant="5" id="CLv-4g-n8l"/>
                             <constraint firstItem="7ds-XF-i5N" firstAttribute="leading" secondItem="8wX-7A-CgV" secondAttribute="leading" constant="22" id="bk7-7U-yvd"/>
                             <constraint firstItem="7ds-XF-i5N" firstAttribute="top" secondItem="8wX-7A-CgV" secondAttribute="top" constant="10" id="enh-GP-3vm"/>
-                            <constraint firstItem="0Xf-mD-bYc" firstAttribute="leading" secondItem="8wX-7A-CgV" secondAttribute="leading" id="fEE-S4-f35"/>
-                            <constraint firstItem="8wX-7A-CgV" firstAttribute="bottom" secondItem="0Xf-mD-bYc" secondAttribute="bottom" constant="-82.666666666666742" id="jzB-co-dEp"/>
-                            <constraint firstItem="0Xf-mD-bYc" firstAttribute="top" secondItem="CL5-1x-Plq" secondAttribute="bottom" constant="35" id="mux-4I-Rxe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Food Recipes" id="B52-6a-tWf"/>
@@ -148,11 +148,11 @@
             </objects>
             <point key="canvasLocation" x="3990" y="-33"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="4ST-is-yCr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="24u-L1-xUv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="8kl-rh-qaU"/>
+                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="8kl-rh-qaU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dE6-wp-z2K">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -179,6 +179,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Orange"/>
+                        <color key="selectedImageTintColor" name="Orange"/>
                     </tabBar>
                     <connections>
                         <segue destination="24u-L1-xUv" kind="relationship" relationship="viewControllers" id="vLG-i6-bto"/>
@@ -194,6 +196,9 @@
         <image name="homekit" catalog="system" width="128" height="104"/>
         <namedColor name="Grey">
             <color red="0.32499998807907104" green="0.32499998807907104" blue="0.32499998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="0.85100001096725464" green="0.58799999952316284" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

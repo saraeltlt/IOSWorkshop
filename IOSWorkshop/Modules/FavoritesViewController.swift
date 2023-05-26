@@ -19,7 +19,7 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
                 if tabItems.count >= 2 {
                     let secondTabBarItem = tabItems[0]
                     secondTabBarItem.image = UIImage(systemName: "homekit")
-                    secondTabBarItem.title = "Home"
+   
                 }
             }
         }

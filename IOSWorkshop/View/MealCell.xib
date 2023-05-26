@@ -37,7 +37,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
                                         <connections>
                                             <action selector="addFavBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q5e-ml-YIg"/>
                                         </connections>
@@ -60,34 +60,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="524" height="303"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg Noodels Recipe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJt-vx-rO1">
-                                        <rect key="frame" x="341.66666666666669" y="10" width="157.33333333333331" height="91"/>
-                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="25"/>
+                                        <rect key="frame" x="289.33333333333331" y="10" width="209.66666666666669" height="91"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Quader khan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwy-vr-g8c">
-                                        <rect key="frame" x="341.66666666666669" y="109" width="157.33333333333331" height="19.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <rect key="frame" x="289.33333333333331" y="109" width="209.66666666666669" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup.and.saucer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tjT-nc-w26">
-                                        <rect key="frame" x="341" y="137.66666666666666" width="25.666666666666686" height="18.333333333333343"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork.knife.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tjT-nc-w26">
+                                        <rect key="frame" x="275.33333333333331" y="137.66666666666666" width="44" height="50.333333333333343"/>
                                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Quader khan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-dC-mmM">
-                                        <rect key="frame" x="374.66666666666669" y="139.66666666666666" width="141.33333333333331" height="14.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <rect key="frame" x="327.33333333333331" y="154.66666666666666" width="188.66666666666669" height="15.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup.and.saucer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-AW-Qig">
-                                        <rect key="frame" x="341" y="166" width="25.666666666666686" height="18.333333333333343"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork.knife.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-AW-Qig">
+                                        <rect key="frame" x="275.33333333333331" y="197.33333333333334" width="44" height="50.333333333333343"/>
                                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Quader khan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-VC-1iD">
-                                        <rect key="frame" x="374.66666666666669" y="168" width="141.33333333333331" height="14.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <rect key="frame" x="327.33333333333331" y="214.33333333333334" width="188.66666666666669" height="15.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -95,7 +95,7 @@
                                 <constraints>
                                     <constraint firstItem="mir-dC-mmM" firstAttribute="centerY" secondItem="tjT-nc-w26" secondAttribute="centerY" id="9ds-9u-fWB"/>
                                     <constraint firstAttribute="trailing" secondItem="mir-dC-mmM" secondAttribute="trailing" constant="8" id="AgW-4A-aff"/>
-                                    <constraint firstItem="pJt-vx-rO1" firstAttribute="width" secondItem="w90-O8-oaZ" secondAttribute="width" multiplier="0.3" id="Eho-5u-ee7"/>
+                                    <constraint firstItem="pJt-vx-rO1" firstAttribute="width" secondItem="w90-O8-oaZ" secondAttribute="width" multiplier="0.4" id="Eho-5u-ee7"/>
                                     <constraint firstItem="pwy-vr-g8c" firstAttribute="centerX" secondItem="pJt-vx-rO1" secondAttribute="centerX" id="JHd-9X-2FZ"/>
                                     <constraint firstItem="pJt-vx-rO1" firstAttribute="top" secondItem="w90-O8-oaZ" secondAttribute="top" constant="10" id="Lrs-Y3-VTk"/>
                                     <constraint firstItem="tjT-nc-w26" firstAttribute="top" secondItem="pwy-vr-g8c" secondAttribute="bottom" constant="8" symbolic="YES" id="NXc-qG-gew"/>
@@ -122,6 +122,7 @@
                             <constraint firstAttribute="bottom" secondItem="YCL-TF-249" secondAttribute="bottom" id="885-gG-67g"/>
                             <constraint firstItem="A3R-yk-qNf" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="A5D-HZ-0Pd"/>
                             <constraint firstAttribute="trailing" secondItem="A3R-yk-qNf" secondAttribute="trailing" id="Byd-3X-lij"/>
+                            <constraint firstItem="tjT-nc-w26" firstAttribute="height" secondItem="vcm-S1-oBS" secondAttribute="height" id="FhP-3k-qg6"/>
                             <constraint firstItem="YCL-TF-249" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="IQ5-w9-7on"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="width" secondItem="w90-O8-oaZ" secondAttribute="width" multiplier="0.13" id="WmV-a8-B9U"/>
                             <constraint firstAttribute="trailing" secondItem="w90-O8-oaZ" secondAttribute="trailing" id="b9R-Bg-oyO"/>
@@ -132,6 +133,7 @@
                             <constraint firstAttribute="trailing" secondItem="YCL-TF-249" secondAttribute="trailing" id="kEl-PZ-y7f"/>
                             <constraint firstAttribute="bottom" secondItem="w90-O8-oaZ" secondAttribute="bottom" id="l9Z-sg-ujE"/>
                             <constraint firstItem="w90-O8-oaZ" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" id="rF6-PE-zrY"/>
+                            <constraint firstItem="tjT-nc-w26" firstAttribute="width" secondItem="vcm-S1-oBS" secondAttribute="width" id="tgv-23-s3u"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" constant="16" id="zYk-9i-22E"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" constant="16" id="ziG-K9-XGx"/>
                         </constraints>
@@ -163,8 +165,8 @@
     </objects>
     <resources>
         <image name="Image" width="383" height="174"/>
-        <image name="cup.and.saucer" catalog="system" width="128" height="91"/>
-        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <namedColor name="Orange">
             <color red="0.85100001096725464" green="0.58799999952316284" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
