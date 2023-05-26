@@ -10,5 +10,5 @@ import Foundation
 protocol NetworkManegerProtocol{
     
     func getMeals(with tag: String, completion: @escaping (Result<MealModel?, Error>) -> Void)
-    func getSimilarRecipes(with mealID: Int , completion: @escaping (Result<Data?, Error>) -> Void) 
+    func getSimilarRecipes(with mealID: Int , completion: @escaping (Result<MealModel?, Error>) -> Void)
 }

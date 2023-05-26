@@ -57,7 +57,7 @@ class NetworkManeger : NetworkManegerProtocol {
             }
     }
 
-    func getSimilarRecipes(with mealID: Int , completion: @escaping (Result<Data?, Error>) -> Void) {
+    func getSimilarRecipes(with mealID: Int , completion: @escaping (Result<MealModel?, Error>) -> Void) {
         let headers: HTTPHeaders = [
             "X-RapidAPI-Key": "9782c795femsh5d409dae6ae0657p1df48ajsn810584d982f3",
             "X-RapidAPI-Host": "tasty.p.rapidapi.com"
@@ -67,7 +67,12 @@ class NetworkManeger : NetworkManegerProtocol {
             .responseData { response in
                 switch response.result {
                 case .success(let data):
-                    completion(.success(data))
+                    do{
+                        let jsonData = try JSONDecoder().decode(MealModel.self, from: data)
+                        completion(.success(jsonData))
+                    }catch{
+                        completion(.failure(error))
+                    }
                     
                 case .failure(let error):
                     completion(.failure(error))
