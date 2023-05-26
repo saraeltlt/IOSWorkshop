@@ -7,8 +7,11 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+class FavoritesViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
 
+    
+    @IBOutlet weak var favTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let tabBarController = self.tabBarController {
@@ -20,8 +23,34 @@ class FavoritesViewController: UIViewController {
                 }
             }
         }
-
+        let noReceiptsImage = UIImageView()
+        noReceiptsImage.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        noReceiptsImage.center = view.center
+        noReceiptsImage.contentMode = .scaleAspectFit
+        noReceiptsImage.image = UIImage(named: "Cooking")
+        noReceiptsImage.isHidden = true
+        view.addSubview(noReceiptsImage)
+        favTable.register(UINib(nibName: "MealCell", bundle: nil),forCellReuseIdentifier: "favCell")
+        favTable.delegate = self
+        favTable.dataSource = self
+        
+       
     }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = favTable.dequeueReusableCell(withIdentifier: "favCell") as! MealCell
+        cell.imageBtnView.backgroundColor = UIColor(named: "Orange")
+        cell.bgImage.image = UIImage(named: "foodImage")
+        return cell
+    }
+   
+
     
   /*  @IBAction func navigateFromFavoriteToDetails(_ sender: UIButton) {
         let detailsStoryBoard = UIStoryboard(name: "DetailsStoryBoard", bundle: nil)
