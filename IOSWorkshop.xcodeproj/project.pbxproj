@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		1CAE7D8AE98B665AAACA6203 /* Pods_IOSWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E78B57B6FB49AC2CC5D10D /* Pods_IOSWorkshop.framework */; };
 		6DC9AB6A1DF6AA8130A0787C /* Pods_IOSWorkshop_IOSWorkshopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE5D81C4D89439413493112 /* Pods_IOSWorkshop_IOSWorkshopUITests.framework */; };
+		8F11A5652A2095CF00FE6039 /* NetworkManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F11A5642A2095CF00FE6039 /* NetworkManeger.swift */; };
+		8F11A5672A2095DD00FE6039 /* NetworkManegerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F11A5662A2095DD00FE6039 /* NetworkManegerProtocol.swift */; };
+		8F11A5692A2095EC00FE6039 /* DatabaseManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F11A5682A2095EC00FE6039 /* DatabaseManeger.swift */; };
+		8F11A56B2A2095F600FE6039 /* DatabaseManegerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F11A56A2A2095F600FE6039 /* DatabaseManegerProtocol.swift */; };
+		8F11A5812A2098A600FE6039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F11A5802A2098A600FE6039 /* Main.storyboard */; };
 		8F41DA912A1F38B6001B4938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA902A1F38B6001B4938 /* AppDelegate.swift */; };
 		8F41DA932A1F38B6001B4938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA922A1F38B6001B4938 /* SceneDelegate.swift */; };
 		8F41DA952A1F38B6001B4938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA942A1F38B6001B4938 /* ViewController.swift */; };
-		8F41DA982A1F38B6001B4938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F41DA962A1F38B6001B4938 /* Main.storyboard */; };
 		8F41DA9B2A1F38B6001B4938 /* IOSWorkshop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA992A1F38B6001B4938 /* IOSWorkshop.xcdatamodeld */; };
 		8F41DA9D2A1F38B9001B4938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F41DA9C2A1F38B9001B4938 /* Assets.xcassets */; };
 		8F41DAA02A1F38B9001B4938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F41DA9E2A1F38B9001B4938 /* LaunchScreen.storyboard */; };
@@ -45,11 +49,15 @@
 		4D334286235586D3C3803056 /* Pods-IOSWorkshop-IOSWorkshopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSWorkshop-IOSWorkshopUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOSWorkshop-IOSWorkshopUITests/Pods-IOSWorkshop-IOSWorkshopUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E9B1A508C87E1A6921B59D4 /* Pods-IOSWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-IOSWorkshop/Pods-IOSWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 		606E9DA8AB1037D796B28449 /* Pods_IOSWorkshopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSWorkshopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F11A5642A2095CF00FE6039 /* NetworkManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManeger.swift; sourceTree = "<group>"; };
+		8F11A5662A2095DD00FE6039 /* NetworkManegerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManegerProtocol.swift; sourceTree = "<group>"; };
+		8F11A5682A2095EC00FE6039 /* DatabaseManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManeger.swift; sourceTree = "<group>"; };
+		8F11A56A2A2095F600FE6039 /* DatabaseManegerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManegerProtocol.swift; sourceTree = "<group>"; };
+		8F11A5802A2098A600FE6039 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8F41DA8D2A1F38B6001B4938 /* IOSWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F41DA902A1F38B6001B4938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F41DA922A1F38B6001B4938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8F41DA942A1F38B6001B4938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F41DA972A1F38B6001B4938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F41DA9A2A1F38B6001B4938 /* IOSWorkshop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOSWorkshop.xcdatamodel; sourceTree = "<group>"; };
 		8F41DA9C2A1F38B9001B4938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F41DA9F2A1F38B9001B4938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,6 +111,159 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F11A55E2A20954B00FE6039 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5602A20956800FE6039 /* Cache */,
+				8F11A55F2A20955F00FE6039 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F11A55F2A20955F00FE6039 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5642A2095CF00FE6039 /* NetworkManeger.swift */,
+				8F11A5662A2095DD00FE6039 /* NetworkManegerProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8F11A5602A20956800FE6039 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5682A2095EC00FE6039 /* DatabaseManeger.swift */,
+				8F11A56A2A2095F600FE6039 /* DatabaseManegerProtocol.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		8F11A5612A20959200FE6039 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F11A5622A20959800FE6039 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A56E2A20961400FE6039 /* Details */,
+				8F11A56D2A20960600FE6039 /* Favourite */,
+				8F11A56C2A20960000FE6039 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8F11A5632A2095A700FE6039 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8F11A56C2A20960000FE6039 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5782A20982500FE6039 /* Coordinator */,
+				8F11A5712A2096B400FE6039 /* View */,
+				8F11A5722A2096B900FE6039 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8F11A56D2A20960600FE6039 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5772A20981E00FE6039 /* Coordinator */,
+				8F11A5732A2096C300FE6039 /* View */,
+				8F11A5742A2096C700FE6039 /* ViewModel */,
+			);
+			name = Favourite;
+			sourceTree = "<group>";
+		};
+		8F11A56E2A20961400FE6039 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5762A20981400FE6039 /* Coordinator */,
+				8F11A56F2A20963600FE6039 /* View */,
+				8F11A5702A20964000FE6039 /* ViewModel */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		8F11A56F2A20963600FE6039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F11A5702A20964000FE6039 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F11A5712A2096B400FE6039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F11A5802A2098A600FE6039 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F11A5722A2096B900FE6039 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F11A5732A2096C300FE6039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8F11A5742A2096C700FE6039 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F11A5752A2096EF00FE6039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F41DA9E2A1F38B9001B4938 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F11A5762A20981400FE6039 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8F11A5772A20981E00FE6039 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		8F11A5782A20982500FE6039 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		8F41DA842A1F38B6001B4938 = {
 			isa = PBXGroup;
 			children = (
@@ -128,12 +289,15 @@
 		8F41DA8F2A1F38B6001B4938 /* IOSWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				8F11A5752A2096EF00FE6039 /* View */,
+				8F11A5632A2095A700FE6039 /* Utilities */,
+				8F11A5622A20959800FE6039 /* Modules */,
+				8F11A5612A20959200FE6039 /* Model */,
+				8F11A55E2A20954B00FE6039 /* Services */,
 				8F41DA902A1F38B6001B4938 /* AppDelegate.swift */,
 				8F41DA922A1F38B6001B4938 /* SceneDelegate.swift */,
 				8F41DA942A1F38B6001B4938 /* ViewController.swift */,
-				8F41DA962A1F38B6001B4938 /* Main.storyboard */,
 				8F41DA9C2A1F38B9001B4938 /* Assets.xcassets */,
-				8F41DA9E2A1F38B9001B4938 /* LaunchScreen.storyboard */,
 				8F41DAA12A1F38B9001B4938 /* Info.plist */,
 				8F41DA992A1F38B6001B4938 /* IOSWorkshop.xcdatamodeld */,
 			);
@@ -167,7 +331,6 @@
 				3BB312F5F1919AFCFF89E182 /* Pods-IOSWorkshopTests.debug.xcconfig */,
 				D5FD07726717ED0F5EE95116 /* Pods-IOSWorkshopTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -281,8 +444,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F41DAA02A1F38B9001B4938 /* LaunchScreen.storyboard in Resources */,
+				8F11A5812A2098A600FE6039 /* Main.storyboard in Resources */,
 				8F41DA9D2A1F38B9001B4938 /* Assets.xcassets in Resources */,
-				8F41DA982A1F38B6001B4938 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +576,10 @@
 				8F41DA9B2A1F38B6001B4938 /* IOSWorkshop.xcdatamodeld in Sources */,
 				8F41DA952A1F38B6001B4938 /* ViewController.swift in Sources */,
 				8F41DA912A1F38B6001B4938 /* AppDelegate.swift in Sources */,
+				8F11A5652A2095CF00FE6039 /* NetworkManeger.swift in Sources */,
+				8F11A5672A2095DD00FE6039 /* NetworkManegerProtocol.swift in Sources */,
+				8F11A5692A2095EC00FE6039 /* DatabaseManeger.swift in Sources */,
+				8F11A56B2A2095F600FE6039 /* DatabaseManegerProtocol.swift in Sources */,
 				8F41DA932A1F38B6001B4938 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,14 +617,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F41DA962A1F38B6001B4938 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F41DA972A1F38B6001B4938 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F41DA9E2A1F38B9001B4938 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -519,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -573,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -598,6 +757,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,6 +786,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
