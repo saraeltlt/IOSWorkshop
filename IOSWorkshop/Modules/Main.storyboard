@@ -104,7 +104,7 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Xf-mD-bYc">
-                                <rect key="frame" x="0.0" y="304.33333333333331" width="393" height="547.66666666666674"/>
+                                <rect key="frame" x="0.0" y="304.33333333333331" width="393" height="547.33333333333348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="dFl-iB-i95" id="QtV-9G-Ip4"/>
@@ -124,7 +124,7 @@
                             <constraint firstItem="7ds-XF-i5N" firstAttribute="leading" secondItem="8wX-7A-CgV" secondAttribute="leading" constant="22" id="bk7-7U-yvd"/>
                             <constraint firstItem="7ds-XF-i5N" firstAttribute="top" secondItem="8wX-7A-CgV" secondAttribute="top" constant="10" id="enh-GP-3vm"/>
                             <constraint firstItem="0Xf-mD-bYc" firstAttribute="leading" secondItem="8wX-7A-CgV" secondAttribute="leading" id="fEE-S4-f35"/>
-                            <constraint firstAttribute="bottom" secondItem="0Xf-mD-bYc" secondAttribute="bottom" id="jzB-co-dEp"/>
+                            <constraint firstItem="8wX-7A-CgV" firstAttribute="bottom" secondItem="0Xf-mD-bYc" secondAttribute="bottom" constant="-82.666666666666742" id="jzB-co-dEp"/>
                             <constraint firstItem="0Xf-mD-bYc" firstAttribute="top" secondItem="CL5-1x-Plq" secondAttribute="bottom" constant="35" id="mux-4I-Rxe"/>
                         </constraints>
                     </view>

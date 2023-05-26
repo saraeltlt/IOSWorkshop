@@ -125,6 +125,10 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell", for: indexPath) as! MealCell
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //return view.frame.width * 0.6
+        return 180
+    }
     
     
 }

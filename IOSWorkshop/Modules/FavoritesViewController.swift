@@ -30,7 +30,7 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
         noReceiptsImage.image = UIImage(named: "Cooking")
         noReceiptsImage.isHidden = true
         view.addSubview(noReceiptsImage)
-        favTable.register(UINib(nibName: "MealCell", bundle: nil),forCellReuseIdentifier: "favCell")
+        favTable.register(UINib(nibName: "MealCell", bundle: nil),forCellReuseIdentifier: "MealCell")
         favTable.delegate = self
         favTable.dataSource = self
         
@@ -44,12 +44,14 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = favTable.dequeueReusableCell(withIdentifier: "favCell") as! MealCell
+        let cell = favTable.dequeueReusableCell(withIdentifier: "MealCell") as! MealCell
         cell.imageBtnView.backgroundColor = UIColor(named: "Orange")
         cell.bgImage.image = UIImage(named: "foodImage")
         return cell
     }
-   
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
 
     
   /*  @IBAction func navigateFromFavoriteToDetails(_ sender: UIButton) {
