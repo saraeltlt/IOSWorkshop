@@ -209,7 +209,6 @@
 		8F11A5712A2096B400FE6039 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8F11A5802A2098A600FE6039 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				8F41DA9E2A1F38B9001B4938 /* LaunchScreen.storyboard */,
+				8F11A5802A2098A600FE6039 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
