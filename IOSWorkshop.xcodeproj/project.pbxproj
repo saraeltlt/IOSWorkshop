@@ -25,6 +25,7 @@
 		8F41DAAB2A1F38BA001B4938 /* IOSWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DAAA2A1F38BA001B4938 /* IOSWorkshopTests.swift */; };
 		8F41DAB52A1F38BA001B4938 /* IOSWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DAB42A1F38BA001B4938 /* IOSWorkshopUITests.swift */; };
 		8F41DAB72A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DAB62A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift */; };
+		8FE6F26B2A20E1D900FD42F2 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6F26A2A20E1D900FD42F2 /* MealModel.swift */; };
 		A79B07BB2A20D10600D6857E /* DetailsStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B07BA2A20D10600D6857E /* DetailsStoryBoard.storyboard */; };
 		A79B07BD2A20D11900D6857E /* FavoriteStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B07BC2A20D11900D6857E /* FavoriteStoryBoard.storyboard */; };
 		A79B07BF2A20D2B600D6857E /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B07BE2A20D2B600D6857E /* FavoritesViewController.swift */; };
@@ -75,6 +76,7 @@
 		8F41DAB02A1F38BA001B4938 /* IOSWorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSWorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F41DAB42A1F38BA001B4938 /* IOSWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSWorkshopUITests.swift; sourceTree = "<group>"; };
 		8F41DAB62A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSWorkshopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FE6F26A2A20E1D900FD42F2 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		A79B07BA2A20D10600D6857E /* DetailsStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryBoard.storyboard; sourceTree = "<group>"; };
 		A79B07BC2A20D11900D6857E /* FavoriteStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteStoryBoard.storyboard; sourceTree = "<group>"; };
 		A79B07BE2A20D2B600D6857E /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		8F41DA8F2A1F38B6001B4938 /* IOSWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				8FE6F2692A20E0D500FD42F2 /* Model */,
 				8F11A5752A2096EF00FE6039 /* View */,
 				8F11A5622A20959800FE6039 /* Modules */,
 				8F11A55E2A20954B00FE6039 /* Services */,
@@ -255,6 +258,14 @@
 				8F41DAB62A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift */,
 			);
 			path = IOSWorkshopUITests;
+			sourceTree = "<group>";
+		};
+		8FE6F2692A20E0D500FD42F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6F26A2A20E1D900FD42F2 /* MealModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A79B07C22A20DC1100D6857E /* home */ = {
@@ -556,6 +567,7 @@
 				8F11A5692A2095EC00FE6039 /* DatabaseManeger.swift in Sources */,
 				8F11A56B2A2095F600FE6039 /* DatabaseManegerProtocol.swift in Sources */,
 				A79B07BF2A20D2B600D6857E /* FavoritesViewController.swift in Sources */,
+				8FE6F26B2A20E1D900FD42F2 /* MealModel.swift in Sources */,
 				8F41DA932A1F38B6001B4938 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
