@@ -145,21 +145,9 @@
 		8F11A5622A20959800FE6039 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8F11A56E2A20961400FE6039 /* Details */,
 				8F11A56D2A20960600FE6039 /* Favourite */,
-				8F11A56C2A20960000FE6039 /* Home */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		8F11A56C2A20960000FE6039 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				8F11A5782A20982500FE6039 /* Coordinator */,
-				8F11A5712A2096B400FE6039 /* View */,
-				8F11A5722A2096B900FE6039 /* ViewModel */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		8F11A56D2A20960600FE6039 /* Favourite */ = {
@@ -170,44 +158,6 @@
 				8F11A5742A2096C700FE6039 /* ViewModel */,
 			);
 			name = Favourite;
-			sourceTree = "<group>";
-		};
-		8F11A56E2A20961400FE6039 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				8F11A5762A20981400FE6039 /* Coordinator */,
-				8F11A56F2A20963600FE6039 /* View */,
-				8F11A5702A20964000FE6039 /* ViewModel */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		8F11A56F2A20963600FE6039 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8F11A5702A20964000FE6039 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		8F11A5712A2096B400FE6039 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8F11A5722A2096B900FE6039 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8F11A5732A2096C300FE6039 /* View */ = {
@@ -235,25 +185,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8F11A5762A20981400FE6039 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		8F11A5772A20981E00FE6039 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Coordinator;
-			sourceTree = "<group>";
-		};
-		8F11A5782A20982500FE6039 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		8F41DA842A1F38B6001B4938 = {
