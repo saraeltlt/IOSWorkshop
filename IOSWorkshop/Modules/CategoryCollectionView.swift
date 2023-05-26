@@ -8,20 +8,18 @@
 import UIKit
 
 extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.categoryArray!.count
+        return categoryArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categories", for: indexPath) as! CategoriesViewCell
-        cell.categoryType.text=self.categoryArray![indexPath.row].title
-        cell.categoryImage.image=UIImage(named: categoryArray![indexPath.row].image)
+ 
+        cell.categoryType.text=self.categoryArray[indexPath.row].title
+        cell.categoryImage.image=UIImage(named: categoryArray[indexPath.row].image)
         cell.container.layer.cornerRadius = 20
         cell.layer.masksToBounds = true
-        if self.categoryArray![indexPath.row].isSelected{
+        if self.categoryArray[indexPath.row].isSelected{
             cell.container.backgroundColor=UIColor(named: "Orange")
         } else {
             cell.container.backgroundColor = .clear
@@ -43,9 +41,9 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let index = indexPath.row
-        self.changeSelectedCellBackground(index: index)
-        print(index)
+
+        self.changeSelectedCellBackground(index: indexPath.row)
+        viewModel?.getMeals(mealCategory: categoryArray[indexPath.row].title.lowercased())
     }
 }
 

@@ -11,8 +11,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var categoriesCollection: UICollectionView!
     @IBOutlet weak var mealsTable: UITableView!
     var viewModel:HomeViewModel?
-    var categoryArray:[HomeData]?
-    var dummyData = MealModel()
+    let categoryArray=MealCategorie.getCategoryData()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel =  HomeViewModel()
@@ -21,15 +20,9 @@ class HomeViewController: UIViewController {
                 self?.mealsTable.reloadData()
             }
         })
-        viewModel?.getMeals(mealCategory: "breakfast")
+        
 
         self.mealsTable.register(UINib(nibName: "MealCell", bundle: nil), forCellReuseIdentifier: "MealCell")
-        categoryArray=[HomeData]()
-        categoryArray?.append(HomeData(title: "Popular", image: "Popular",isSelected: false))
-        categoryArray?.append(HomeData(title: "Breakfast", image: "Breakfast",isSelected: false))
-        categoryArray?.append(HomeData(title: "Lunch", image: "Lunch",isSelected: false))
-        categoryArray?.append(HomeData(title: "Dinner", image: "Dinner",isSelected: false))
-        categoryArray?.append(HomeData(title: "Dessert", image: "Dessert",isSelected: false))
         if let tabBarController = self.tabBarController {
             if let tabItems = tabBarController.tabBar.items {
                 if tabItems.count >= 2 {
@@ -44,11 +37,11 @@ class HomeViewController: UIViewController {
     
     
     func changeSelectedCellBackground(index:Int){
-        self.categoryArray?.forEach({ item in
+        self.categoryArray.forEach({ item in
             item.isSelected = false
         })
         
-        self.categoryArray![index].isSelected = true
+        self.categoryArray[index].isSelected = true
         
         self.categoriesCollection.reloadData()
         
@@ -64,16 +57,7 @@ class HomeViewController: UIViewController {
 
 }
 
-class HomeData{
-    var title:String
-    var image:String
-    var isSelected:Bool
-    init(title:String,image:String,isSelected:Bool){
-        self.title = title
-        self.image = image
-        self.isSelected = isSelected
-    }
-}
+
 
 
 
