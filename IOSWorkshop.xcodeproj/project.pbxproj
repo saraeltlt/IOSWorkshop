@@ -142,13 +142,6 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
-		8F11A5612A20959200FE6039 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		8F11A5622A20959800FE6039 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,13 +150,6 @@
 				8F11A56C2A20960000FE6039 /* Home */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		8F11A5632A2095A700FE6039 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8F11A56C2A20960000FE6039 /* Home */ = {
@@ -296,9 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				8F11A5752A2096EF00FE6039 /* View */,
-				8F11A5632A2095A700FE6039 /* Utilities */,
 				8F11A5622A20959800FE6039 /* Modules */,
-				8F11A5612A20959200FE6039 /* Model */,
 				8F11A55E2A20954B00FE6039 /* Services */,
 				8F41DA902A1F38B6001B4938 /* AppDelegate.swift */,
 				8F41DA922A1F38B6001B4938 /* SceneDelegate.swift */,
