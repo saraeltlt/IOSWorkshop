@@ -11,8 +11,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let tabBarController = self.tabBarController {
+            if let tabItems = tabBarController.tabBar.items {
+                if tabItems.count >= 2 {
+                    let secondTabBarItem = tabItems[1]
+                    secondTabBarItem.image = UIImage(systemName: "star.fill")
+                    secondTabBarItem.title = "Favorite"
+                }
+            }
+        }
     }
+    
+    /* @IBAction func navigateToDetails(_ sender: UIButton) {
+     let detailsStoryBoard = UIStoryboard(name: "DetailsStoryBoard", bundle: nil)
+     let detailsViewController = detailsStoryBoard.instantiateViewController(withIdentifier: "details") as! detailsViewController
+     detailsViewController.labellTest="ESLAM"
+     navigationController?.pushViewController(detailsViewController, animated: true)
+ }*/
 
 
 }

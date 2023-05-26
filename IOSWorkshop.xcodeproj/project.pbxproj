@@ -25,6 +25,10 @@
 		8F41DAAB2A1F38BA001B4938 /* IOSWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DAAA2A1F38BA001B4938 /* IOSWorkshopTests.swift */; };
 		8F41DAB52A1F38BA001B4938 /* IOSWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DAB42A1F38BA001B4938 /* IOSWorkshopUITests.swift */; };
 		8F41DAB72A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DAB62A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift */; };
+		A79B07BB2A20D10600D6857E /* DetailsStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B07BA2A20D10600D6857E /* DetailsStoryBoard.storyboard */; };
+		A79B07BD2A20D11900D6857E /* FavoriteStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B07BC2A20D11900D6857E /* FavoriteStoryBoard.storyboard */; };
+		A79B07BF2A20D2B600D6857E /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B07BE2A20D2B600D6857E /* FavoritesViewController.swift */; };
+		A79B07C12A20D2D700D6857E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B07C02A20D2D700D6857E /* DetailsViewController.swift */; };
 		D092239016628AEF3B757C2E /* Pods_IOSWorkshopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606E9DA8AB1037D796B28449 /* Pods_IOSWorkshopTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,10 @@
 		8F41DAB02A1F38BA001B4938 /* IOSWorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSWorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F41DAB42A1F38BA001B4938 /* IOSWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSWorkshopUITests.swift; sourceTree = "<group>"; };
 		8F41DAB62A1F38BA001B4938 /* IOSWorkshopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSWorkshopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A79B07BA2A20D10600D6857E /* DetailsStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryBoard.storyboard; sourceTree = "<group>"; };
+		A79B07BC2A20D11900D6857E /* FavoriteStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteStoryBoard.storyboard; sourceTree = "<group>"; };
+		A79B07BE2A20D2B600D6857E /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		A79B07C02A20D2D700D6857E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D5FD07726717ED0F5EE95116 /* Pods-IOSWorkshopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSWorkshopTests.release.xcconfig"; path = "Target Support Files/Pods-IOSWorkshopTests/Pods-IOSWorkshopTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8E78B57B6FB49AC2CC5D10D /* Pods_IOSWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0D5A9BEE2CF7B0EE8A76E /* Pods-IOSWorkshop-IOSWorkshopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSWorkshop-IOSWorkshopUITests.release.xcconfig"; path = "Target Support Files/Pods-IOSWorkshop-IOSWorkshopUITests/Pods-IOSWorkshop-IOSWorkshopUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +189,10 @@
 			children = (
 				8F41DA9E2A1F38B9001B4938 /* LaunchScreen.storyboard */,
 				8F11A5802A2098A600FE6039 /* Main.storyboard */,
+				A79B07BA2A20D10600D6857E /* DetailsStoryBoard.storyboard */,
+				A79B07BC2A20D11900D6857E /* FavoriteStoryBoard.storyboard */,
+				A79B07BE2A20D2B600D6857E /* FavoritesViewController.swift */,
+				A79B07C02A20D2D700D6857E /* DetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,7 +382,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F11A5872A20AA2600FE6039 /* MealCell.xib in Resources */,
+				A79B07BD2A20D11900D6857E /* FavoriteStoryBoard.storyboard in Resources */,
 				8F41DAA02A1F38B9001B4938 /* LaunchScreen.storyboard in Resources */,
+				A79B07BB2A20D10600D6857E /* DetailsStoryBoard.storyboard in Resources */,
 				8F11A5812A2098A600FE6039 /* Main.storyboard in Resources */,
 				8F41DA9D2A1F38B9001B4938 /* Assets.xcassets in Resources */,
 			);
@@ -503,11 +517,13 @@
 				8F41DA9B2A1F38B6001B4938 /* IOSWorkshop.xcdatamodeld in Sources */,
 				8F41DA952A1F38B6001B4938 /* ViewController.swift in Sources */,
 				8F41DA912A1F38B6001B4938 /* AppDelegate.swift in Sources */,
+				A79B07C12A20D2D700D6857E /* DetailsViewController.swift in Sources */,
 				8F11A5862A20AA2600FE6039 /* MealCell.swift in Sources */,
 				8F11A5652A2095CF00FE6039 /* NetworkManeger.swift in Sources */,
 				8F11A5672A2095DD00FE6039 /* NetworkManegerProtocol.swift in Sources */,
 				8F11A5692A2095EC00FE6039 /* DatabaseManeger.swift in Sources */,
 				8F11A56B2A2095F600FE6039 /* DatabaseManegerProtocol.swift in Sources */,
+				A79B07BF2A20D2B600D6857E /* FavoritesViewController.swift in Sources */,
 				8F41DA932A1F38B6001B4938 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
