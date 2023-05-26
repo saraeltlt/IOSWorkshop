@@ -45,8 +45,7 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favTable.dequeueReusableCell(withIdentifier: "MealCell") as! MealCell
-        cell.imageBtnView.backgroundColor = UIColor(named: "Orange")
-        cell.bgImage.image = UIImage(named: "foodImage")
+
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

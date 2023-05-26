@@ -17,6 +17,7 @@ class MealCell: UITableViewCell {
     @IBOutlet weak var mealServingLabel: UILabel!
     @IBOutlet weak var bgImage: UIImageView!
     
+    @IBOutlet weak var fadeView2: UIView!
     @IBOutlet weak var fadeView: UIView!
     @IBOutlet weak var backgroudView: UIView!
     
@@ -26,6 +27,7 @@ class MealCell: UITableViewCell {
     
         bgImage.layer.cornerRadius =  bgImage.frame.width*0.05
         fadeView.layer.cornerRadius =  fadeView.frame.width*0.05
+        fadeView2.layer.cornerRadius =  fadeView2.frame.width*0.05
       
     }
 

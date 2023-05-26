@@ -25,11 +25,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="YCL-TF-249">
                                 <rect key="frame" x="0.0" y="0.0" width="524" height="303"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3R-yk-qNf">
+                                <rect key="frame" x="0.0" y="0.0" width="524" height="303"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.54608154296874989" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-dH-r7r">
-                                <rect key="frame" x="16" y="15.999999999999996" width="68" height="51.666666666666657"/>
+                                <rect key="frame" x="16" y="16" width="68" height="75.666666666666671"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-S1-oBS">
-                                        <rect key="frame" x="12" y="12.000000000000002" width="44" height="27.666666666666671"/>
+                                        <rect key="frame" x="12" y="11.999999999999996" width="44" height="51.666666666666657"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -88,7 +92,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.51478910130380795" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="mir-dC-mmM" firstAttribute="centerY" secondItem="tjT-nc-w26" secondAttribute="centerY" id="9ds-9u-fWB"/>
                                     <constraint firstAttribute="trailing" secondItem="mir-dC-mmM" secondAttribute="trailing" constant="8" id="AgW-4A-aff"/>
@@ -117,11 +120,15 @@
                         <constraints>
                             <constraint firstItem="YCL-TF-249" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" id="29h-oN-DVL"/>
                             <constraint firstAttribute="bottom" secondItem="YCL-TF-249" secondAttribute="bottom" id="885-gG-67g"/>
+                            <constraint firstItem="A3R-yk-qNf" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="A5D-HZ-0Pd"/>
+                            <constraint firstAttribute="trailing" secondItem="A3R-yk-qNf" secondAttribute="trailing" id="Byd-3X-lij"/>
                             <constraint firstItem="YCL-TF-249" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="IQ5-w9-7on"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="width" secondItem="w90-O8-oaZ" secondAttribute="width" multiplier="0.13" id="WmV-a8-B9U"/>
                             <constraint firstAttribute="trailing" secondItem="w90-O8-oaZ" secondAttribute="trailing" id="b9R-Bg-oyO"/>
                             <constraint firstItem="w90-O8-oaZ" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="cRP-LA-ik6"/>
-                            <constraint firstItem="hc5-dH-r7r" firstAttribute="height" secondItem="w90-O8-oaZ" secondAttribute="height" multiplier="0.17" id="g6z-iM-95y"/>
+                            <constraint firstItem="A3R-yk-qNf" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" id="fCw-qX-gUd"/>
+                            <constraint firstAttribute="bottom" secondItem="A3R-yk-qNf" secondAttribute="bottom" id="fIP-3L-wrV"/>
+                            <constraint firstItem="hc5-dH-r7r" firstAttribute="height" secondItem="w90-O8-oaZ" secondAttribute="height" multiplier="0.25" id="g6z-iM-95y"/>
                             <constraint firstAttribute="trailing" secondItem="YCL-TF-249" secondAttribute="trailing" id="kEl-PZ-y7f"/>
                             <constraint firstAttribute="bottom" secondItem="w90-O8-oaZ" secondAttribute="bottom" id="l9Z-sg-ujE"/>
                             <constraint firstItem="w90-O8-oaZ" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" id="rF6-PE-zrY"/>
@@ -143,6 +150,7 @@
                 <outlet property="backgroudView" destination="IUa-gZ-3WV" id="un9-BS-Nam"/>
                 <outlet property="bgImage" destination="YCL-TF-249" id="5ib-Rg-iNW"/>
                 <outlet property="fadeView" destination="w90-O8-oaZ" id="cKD-QS-Pto"/>
+                <outlet property="fadeView2" destination="A3R-yk-qNf" id="reY-w2-Xz8"/>
                 <outlet property="favBtn" destination="vcm-S1-oBS" id="EDm-dc-ETt"/>
                 <outlet property="imageBtnView" destination="hc5-dH-r7r" id="W1n-ig-zB4"/>
                 <outlet property="mealChefLabel" destination="pwy-vr-g8c" id="PhN-Q2-6F7"/>

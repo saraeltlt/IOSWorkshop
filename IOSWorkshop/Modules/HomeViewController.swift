@@ -61,6 +61,11 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     var categoryArray:[HomeData]?
     override func viewDidLoad() {
         super.viewDidLoad()
+        let viewModel =  HomeViewModel()
+/*    viewModel.bindListToHomeViewController = { result in
+            
+        }
+ */
         self.mealsTable.register(UINib(nibName: "MealCell", bundle: nil), forCellReuseIdentifier: "MealCell")
         categoryArray=[HomeData]()
         categoryArray?.append(HomeData(title: "Popular", image: "Popular",isSelected: false))
