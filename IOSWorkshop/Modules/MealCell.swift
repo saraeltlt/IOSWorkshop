@@ -9,6 +9,15 @@ import UIKit
 
 class MealCell: UITableViewCell {
 
+    @IBOutlet weak var favBtn: UIButton!
+    @IBOutlet weak var imageBtnView: UIView!
+    @IBOutlet weak var mealNameLabel: UILabel!
+    @IBOutlet weak var mealChefLabel: UILabel!
+    @IBOutlet weak var mealTypeLabel: UILabel!
+    @IBOutlet weak var mealServingLabel: UILabel!
+    @IBOutlet weak var bgImage: UIImageView!
+    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +29,6 @@ class MealCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func addFavBtn(_ sender: UIButton) {
+    }
 }
