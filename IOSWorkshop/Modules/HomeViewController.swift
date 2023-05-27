@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
         self.loadingIndicator.startAnimating()
         self.viewModel =  HomeViewModel()
         viewModel?.mealsData.bind({ [weak self] data in
-            if data!{
+            if let data = data{
                 self?.container.isHidden = true
             }
             DispatchQueue.main.async {

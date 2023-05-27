@@ -17,14 +17,14 @@ final class NetworkManegerTest: XCTestCase {
             switch mealResponse {
             case .success(let data):
                 if let mealResponse = data {
-                    XCTAssertGreaterThan(mealResponse.results!.count, 0,"Error in retrive array")
+                    XCTAssertGreaterThan(mealResponse.results?.count ?? 0, 0,"Error in retrive array")
                     myExpectation.fulfill()
                 } else {
                     XCTFail()
                     myExpectation.fulfill()
                 }
                 
-            case .failure(let error):
+            case .failure(_):
                 XCTFail()
                 myExpectation.fulfill()
             }
@@ -38,14 +38,14 @@ final class NetworkManegerTest: XCTestCase {
             switch mealResponse {
             case .success(let data):
                 if let mealResponse = data {
-                    XCTAssertGreaterThan(mealResponse.results!.count, 0,"Error in retrive array")
+                    XCTAssertGreaterThan(mealResponse.results?.count ?? 0, 0,"Error in retrive array")
                     myExpectation.fulfill()
                 } else {
                     XCTFail()
                     myExpectation.fulfill()
                 }
                 
-            case .failure(let error):
+            case .failure(_):
                 XCTFail()
                 myExpectation.fulfill()
             }
