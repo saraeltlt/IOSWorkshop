@@ -33,13 +33,15 @@ class HomeViewController: UIViewController {
             }
         })
         
-     /*   viewModel?.addToFavorite.bind({ status in
+        viewModel?.addToFavorite.bind({ status in
             if status == .success {
                 print("added successfully from observer")
+                self.showAlert(title: "Added successfully", message: "Meal added successfully to your favorite list you can display it any time")
             }else if status == .error {
                 print("added before from observer")
+                self.showAlert(title: "Unexpected Error", message: "Meal is already exist in your favorite list you can't insert it again")
             }
-        })  */
+        })  
 
         self.mealsTable.register(UINib(nibName: "MealCell", bundle: nil), forCellReuseIdentifier: "MealCell")
         if let tabBarController = self.tabBarController {
@@ -73,7 +75,11 @@ class HomeViewController: UIViewController {
      navigationController?.pushViewController(detailsViewController, animated: true)
  }*/
 
-
+ 
+    
+    
+    
+    
 }
 
 

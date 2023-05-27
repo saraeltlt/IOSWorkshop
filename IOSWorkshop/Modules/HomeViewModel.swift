@@ -9,7 +9,7 @@ import Foundation
 class HomeViewModel{
     
     var mealsData:Observable<Bool>=Observable(false)
-  //  var addToFavorite:Observable<AddFavoritueStatus>=Observable(.waiting)
+    var addToFavorite:Observable<AddFavoritueStatus>=Observable(.waiting)
     var mealResponse = [Meal]()
     
     func getMeals(mealCategory:String){
@@ -30,7 +30,7 @@ class HomeViewModel{
                 print(error)
             }        }
     }
-   /*
+   
     
     func addToFavorite(mealToInsert:Meal){
         DatabaseManager.getInstance.saveMeals(data: mealToInsert) { [weak self] status in
@@ -42,14 +42,14 @@ class HomeViewModel{
         }
     }
     
-    */
+    
     func getData(index:Int)->StructMealToView{
         return StructMealToView(data: self.mealResponse[index])
     }
-   /*
+   
     func getAllObjectDataToInsert(index:Int)->Meal{
         return self.mealResponse[index]
-    }*/
+    }
     func getMealsNumbers()->Int{
         return mealResponse.count
     }

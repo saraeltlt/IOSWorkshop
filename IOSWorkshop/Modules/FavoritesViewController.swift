@@ -34,7 +34,7 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
         tags = ingredient()
         instructions = instruction()
         meal?.name = "chicken"
-        meal?.show_id = 90
+        meal?.id = 90
         meal?.credits?[0].name = "aa"
         meal?.credits?[0].type = "a"
         meal?.tags?[0].display_name = "a"

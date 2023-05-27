@@ -14,7 +14,7 @@ class MealModel : Decodable {
 
 class Meal : Decodable{
     
-    var show_id: Int?
+    var id: Int?
     var name: String?
     var  credits : [credit]? //chef and type
     var thumbnail_url: String?

@@ -25,7 +25,7 @@ class DatabaseManager : DatabaseManegerProtocol{
       }
       func saveMeals(data:Meal,completion : @escaping (Bool)-> Void){
           let fetchRequest=NSFetchRequest<NSManagedObject>(entityName: "Meals")
-          let predicate = NSPredicate(format: "show_id == %d", data.show_id ?? 0)
+          let predicate = NSPredicate(format: "show_id == %d", data.id ?? 0)
           fetchRequest.predicate=predicate
           do{
               let existingMeal = try context.fetch(fetchRequest)
@@ -39,7 +39,7 @@ class DatabaseManager : DatabaseManegerProtocol{
                   meals.setValue(data.credits?[0].type, forKey: "mealType")
                   meals.setValue(data.name, forKey: "name")
                   meals.setValue(data.num_servings, forKey: "num_servings")
-                  meals.setValue(data.show_id, forKey: "show_id")
+                  meals.setValue(data.id, forKey: "show_id")
                   meals.setValue(data.thumbnail_url, forKey: "thumbnail_url")
                   meals.setValue(data.tags?[0].type, forKey: "type")
                   meals.setValue(data.video_url, forKey: "video_url")
@@ -80,14 +80,14 @@ class DatabaseManager : DatabaseManegerProtocol{
               let meals=try context.fetch(fetchRequest)
               for meal in meals {
                   let mealSaved=Meal()
-                  mealSaved.show_id=meal.value(forKey: "show_id") as? Int
+                  mealSaved.id=meal.value(forKey: "show_id") as? Int
                   mealSaved.credits?[0].name=meal.value(forKey: "chef_name") as? String
                   mealSaved.tags?[0].display_name = meal.value(forKey: "display_name") as? String
                   mealSaved.instructions?[0].display_text = meal.value(forKey: "display_text")as? String
                   mealSaved.credits?[0].type = meal.value(forKey: "mealType")as? String
                   mealSaved.name = meal.value(forKey: "name")as? String
                   mealSaved.num_servings = meal.value(forKey: "num_servings") as? Int
-                  mealSaved.show_id = meal.value(forKey: "show_id") as? Int
+                  mealSaved.id = meal.value(forKey: "show_id") as? Int
                   mealSaved.thumbnail_url = meal.value(forKey: "thumbnail_url") as? String
                   mealSaved.tags?[0].type = meal.value(forKey: "type") as? String
                   mealSaved.video_url = meal.value(forKey: "video_url") as? String
