@@ -24,6 +24,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     
     @objc func buttonTapped(_ sender: UIButton) {
         print("Button tapped in cell at  row \(sender.tag)")
+   /*     self.viewModel?.addToFavorite(mealToInsert: (self.viewModel?.getAllObjectDataToInsert(index: sender.tag))!)  */
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -33,6 +33,13 @@ class HomeViewController: UIViewController {
             }
         })
         
+     /*   viewModel?.addToFavorite.bind({ status in
+            if status == .success {
+                print("added successfully from observer")
+            }else if status == .error {
+                print("added before from observer")
+            }
+        })  */
 
         self.mealsTable.register(UINib(nibName: "MealCell", bundle: nil), forCellReuseIdentifier: "MealCell")
         if let tabBarController = self.tabBarController {
