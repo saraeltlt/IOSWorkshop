@@ -31,32 +31,14 @@
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-dH-r7r">
                                 <rect key="frame" x="16" y="16" width="68" height="75.666666666666671"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-S1-oBS">
-                                        <rect key="frame" x="12" y="11.999999999999996" width="44" height="51.666666666666657"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
-                                        <connections>
-                                            <action selector="addFavBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q5e-ml-YIg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" name="Orange"/>
-                                <constraints>
-                                    <constraint firstItem="vcm-S1-oBS" firstAttribute="top" secondItem="hc5-dH-r7r" secondAttribute="top" constant="12" id="IdS-v4-e2H"/>
-                                    <constraint firstAttribute="bottom" secondItem="vcm-S1-oBS" secondAttribute="bottom" constant="12" id="bfe-wi-uqr"/>
-                                    <constraint firstItem="vcm-S1-oBS" firstAttribute="leading" secondItem="hc5-dH-r7r" secondAttribute="leading" constant="12" id="h6U-0E-8Ax"/>
-                                    <constraint firstAttribute="trailing" secondItem="vcm-S1-oBS" secondAttribute="trailing" constant="12" id="x2K-AN-OZf"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w90-O8-oaZ">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w90-O8-oaZ">
                                 <rect key="frame" x="0.0" y="0.0" width="524" height="303"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg Noodels Recipe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJt-vx-rO1">
@@ -72,21 +54,21 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="typeWhite" translatesAutoresizingMaskIntoConstraints="NO" id="tjT-nc-w26">
-                                        <rect key="frame" x="286.33333333333331" y="136.66666666666666" width="33" height="51.666666666666657"/>
+                                        <rect key="frame" x="298" y="136.66666666666666" width="21.333333333333314" height="21.333333333333343"/>
                                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Quader khan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-dC-mmM">
-                                        <rect key="frame" x="327.33333333333331" y="154.66666666666666" width="188.66666666666669" height="15.666666666666657"/>
+                                        <rect key="frame" x="327.33333333333331" y="139.33333333333334" width="188.66666666666669" height="15.666666666666657"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="servingWhite" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-AW-Qig">
-                                        <rect key="frame" x="286.33333333333331" y="196.33333333333334" width="33" height="51.666666666666657"/>
+                                        <rect key="frame" x="298" y="166" width="21.333333333333314" height="21.333333333333343"/>
                                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Quader khan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-VC-1iD">
-                                        <rect key="frame" x="327.33333333333331" y="214.33333333333334" width="188.66666666666669" height="15.666666666666657"/>
+                                        <rect key="frame" x="327.33333333333331" y="168.66666666666666" width="188.66666666666669" height="15.666666666666657"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -115,6 +97,16 @@
                                     <constraint firstItem="Btc-VC-1iD" firstAttribute="width" secondItem="mir-dC-mmM" secondAttribute="width" id="zDe-Tu-Lpm"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-S1-oBS">
+                                <rect key="frame" x="15.999999999999996" y="16.000000000000004" width="50.666666666666657" height="34.333333333333343"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="addFavBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q5e-ml-YIg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -122,18 +114,18 @@
                             <constraint firstAttribute="bottom" secondItem="YCL-TF-249" secondAttribute="bottom" id="885-gG-67g"/>
                             <constraint firstItem="A3R-yk-qNf" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="A5D-HZ-0Pd"/>
                             <constraint firstAttribute="trailing" secondItem="A3R-yk-qNf" secondAttribute="trailing" id="Byd-3X-lij"/>
-                            <constraint firstItem="tjT-nc-w26" firstAttribute="height" secondItem="vcm-S1-oBS" secondAttribute="height" id="FhP-3k-qg6"/>
                             <constraint firstItem="YCL-TF-249" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="IQ5-w9-7on"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="width" secondItem="w90-O8-oaZ" secondAttribute="width" multiplier="0.13" id="WmV-a8-B9U"/>
                             <constraint firstAttribute="trailing" secondItem="w90-O8-oaZ" secondAttribute="trailing" id="b9R-Bg-oyO"/>
                             <constraint firstItem="w90-O8-oaZ" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" id="cRP-LA-ik6"/>
+                            <constraint firstItem="vcm-S1-oBS" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" constant="16" id="dIt-sB-jMn"/>
+                            <constraint firstItem="vcm-S1-oBS" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" constant="16" id="eq2-LF-Ncn"/>
                             <constraint firstItem="A3R-yk-qNf" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" id="fCw-qX-gUd"/>
                             <constraint firstAttribute="bottom" secondItem="A3R-yk-qNf" secondAttribute="bottom" id="fIP-3L-wrV"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="height" secondItem="w90-O8-oaZ" secondAttribute="height" multiplier="0.25" id="g6z-iM-95y"/>
                             <constraint firstAttribute="trailing" secondItem="YCL-TF-249" secondAttribute="trailing" id="kEl-PZ-y7f"/>
                             <constraint firstAttribute="bottom" secondItem="w90-O8-oaZ" secondAttribute="bottom" id="l9Z-sg-ujE"/>
                             <constraint firstItem="w90-O8-oaZ" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" id="rF6-PE-zrY"/>
-                            <constraint firstItem="tjT-nc-w26" firstAttribute="width" secondItem="vcm-S1-oBS" secondAttribute="width" multiplier="0.75" id="tgv-23-s3u"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="top" secondItem="IUa-gZ-3WV" secondAttribute="top" constant="16" id="zYk-9i-22E"/>
                             <constraint firstItem="hc5-dH-r7r" firstAttribute="leading" secondItem="IUa-gZ-3WV" secondAttribute="leading" constant="16" id="ziG-K9-XGx"/>
                         </constraints>
@@ -169,7 +161,7 @@
         <image name="servingWhite" width="21.333333969116211" height="21.333333969116211"/>
         <image name="typeWhite" width="21.333333969116211" height="21.333333969116211"/>
         <namedColor name="Orange">
-            <color red="0.85098039215686272" green="0.58823529411764708" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.85100001096725464" green="0.58799999952316284" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
