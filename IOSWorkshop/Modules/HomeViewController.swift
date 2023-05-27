@@ -10,14 +10,26 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var categoriesCollection: UICollectionView!
     @IBOutlet weak var mealsTable: UITableView!
+    
+    
+    @IBOutlet weak var container: UIView!
+    
+   
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    
     var viewModel:HomeViewModel?
     let categoryArray=MealCategorie.getCategoryData()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadingIndicator.startAnimating()
         self.viewModel =  HomeViewModel()
         viewModel?.mealsData.bind({ [weak self] data in
+            if data!{
+                self?.container.isHidden = true
+            }
             DispatchQueue.main.async {
                 self?.mealsTable.reloadData()
+
             }
         })
         
