@@ -27,7 +27,7 @@ class Meal : Decodable{
 }
 
 class credit : Decodable{
-    var name: String? //chef name
+    var name: String? //chef_name
     var type: String? //mealType
     
 }
