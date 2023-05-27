@@ -64,13 +64,13 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
        
   
         
-        let noReceiptsImage = UIImageView()
-        noReceiptsImage.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-        noReceiptsImage.center = view.center
-        noReceiptsImage.contentMode = .scaleAspectFit
-        noReceiptsImage.image = UIImage(named: "Cooking")
-        noReceiptsImage.isHidden = true
-        view.addSubview(noReceiptsImage)
+        let numberOfReceiptsImage = UIImageView()
+        numberOfReceiptsImage.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        numberOfReceiptsImage.center = view.center
+        numberOfReceiptsImage.contentMode = .scaleAspectFit
+        numberOfReceiptsImage.image = UIImage(named: "Cooking")
+        numberOfReceiptsImage.isHidden = true
+        view.addSubview(numberOfReceiptsImage)
         favTable.register(UINib(nibName: "MealCell", bundle: nil),forCellReuseIdentifier: "MealCell")
         favTable.delegate = self
         favTable.dataSource = self

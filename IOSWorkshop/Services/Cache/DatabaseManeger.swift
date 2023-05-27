@@ -9,26 +9,29 @@ import Foundation
 import CoreData
 import UIKit
 class DatabaseManager : DatabaseManegerProtocol{
-    let appDelegate : AppDelegate
     let context: NSManagedObjectContext
     static let getInstance=DatabaseManager()
     let credits = credit()
     let tags = ingredient()
     let instructions = instruction()
      private init() {
+         
+         if let myAppDelegate = UIApplication.shared.delegate as? AppDelegate{
+             context = myAppDelegate.persistentContainer.viewContext
+         }else{
+             context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+         }
          print("single object created")
-          appDelegate=UIApplication.shared.delegate as! AppDelegate
-         context = appDelegate.persistentContainer.viewContext
       }
       func saveMeals(data:Meal,completion : @escaping (Bool)-> Void){
           let fetchRequest=NSFetchRequest<NSManagedObject>(entityName: "Meals")
-          let predicate = NSPredicate(format: "show_id == %d", data.show_id!)
+          let predicate = NSPredicate(format: "show_id == %d", data.show_id ?? 0)
           fetchRequest.predicate=predicate
           do{
               let existingMeal = try context.fetch(fetchRequest)
               if existingMeal.isEmpty  {
-                  let entity=NSEntityDescription.entity(forEntityName: "Meals", in: context)
-                  let meals=NSManagedObject(entity: entity!, insertInto: context)
+                  guard let entity=NSEntityDescription.entity(forEntityName: "Meals", in: context) else{return}
+                  let meals=NSManagedObject(entity: entity, insertInto: context)
                  // print(data.credits![0].name)
                   meals.setValue(data.credits?[0].name, forKey: "chef_name")
                   meals.setValue(data.tags?[0].display_name, forKey: "display_name")
@@ -107,7 +110,7 @@ class DatabaseManager : DatabaseManegerProtocol{
         let predicate=NSPredicate(format: "show_id == %d",id)
         fetchRequest.predicate = predicate
         do{
-            var result = try context.fetch(fetchRequest)
+             let result = try context.fetch(fetchRequest)
             return !result.isEmpty
         }catch{
             return false
