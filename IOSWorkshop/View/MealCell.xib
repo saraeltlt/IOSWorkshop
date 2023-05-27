@@ -81,7 +81,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dinner" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-AW-Qig">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="type" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-AW-Qig">
                                         <rect key="frame" x="284" y="196.33333333333334" width="35.333333333333314" height="51.666666666666657"/>
                                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </imageView>
@@ -164,10 +164,10 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Dinner" width="42.666667938232422" height="42.666667938232422"/>
         <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="placeholder" width="383" height="174"/>
+        <image name="type" width="42.666667938232422" height="42.666667938232422"/>
         <namedColor name="Orange">
             <color red="0.85100001096725464" green="0.58799999952316284" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

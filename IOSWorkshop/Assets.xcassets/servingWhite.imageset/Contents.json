@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "wedding-dinner 1.png",
+      "filename" : "dinner-10.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "wedding-dinner 1@2x.png",
+      "filename" : "dinner-11.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "wedding-dinner 1@3x.png",
+      "filename" : "dinner-12.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

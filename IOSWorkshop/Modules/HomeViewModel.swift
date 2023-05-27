@@ -30,6 +30,9 @@ class HomeViewModel{
     func getMealsNumbers()->Int{
         return mealResponse.count
     }
+    func navigateToDetails(index:Int) -> DetailsViewModel{
+        return DetailsViewModel(meal: mealResponse[index])
+    }
     
     
     

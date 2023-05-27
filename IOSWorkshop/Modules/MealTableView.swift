@@ -22,6 +22,14 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.width * 0.55
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       /* let detailsStoryBoard = UIStoryboard(name: "DetailsStoryBoard", bundle: nil)
+        let detailsViewController = detailsStoryBoard.instantiateViewController(withIdentifier: "details") as! DetailsViewController
+        detailsViewController.detailsViewModel=viewModel.navigateToDetails(index:indexPath.row)
+        navigationController?.pushViewController(detailsViewController, animated: true)*/
+        
+        
+    }
     
     
 }
