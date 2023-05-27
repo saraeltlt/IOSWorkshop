@@ -11,6 +11,12 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
 
     
     @IBOutlet weak var favTable: UITableView!
+    var meal  : Meal?
+    var meal2  : Meal?
+    var credits : credit?
+    var tags : ingredient?
+    var instructions : instruction?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +29,41 @@ class FavoritesViewController: UIViewController , UITableViewDelegate , UITableV
                 }
             }
         }
+       meal = Meal()
+        credits = credit()
+        tags = ingredient()
+        instructions = instruction()
+        meal?.name = "chicken"
+        meal?.show_id = 90
+        meal?.credits?[0].name = "aa"
+        meal?.credits?[0].type = "a"
+        meal?.tags?[0].display_name = "a"
+        meal?.instructions?[0].display_text = "a"
+        meal?.name = "a"
+        meal?.num_servings = 2
+        meal?.thumbnail_url = "a"
+        meal?.tags?[0].type = "a"
+        meal?.video_url = "a"
+        var database = DatabaseManager.getInstance
+      /*  database.saveMeals(data: meal!) { meal in
+            print(self.meal?.name)
+            if(meal == true){
+                print("saved successfully")
+            }
+            }
+ 
+  database.fetchMeals { meal in
+            print(meal?[0].name)
+        }
+       */
+        database.deleteMeals(id: 60) { delete in
+            if delete == true {
+                print("deleted successfully")
+            }
+        }
+       
+  
+        
         let noReceiptsImage = UIImageView()
         noReceiptsImage.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         noReceiptsImage.center = view.center
