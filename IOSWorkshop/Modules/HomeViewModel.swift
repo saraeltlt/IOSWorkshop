@@ -10,8 +10,13 @@ class HomeViewModel{
     
     var mealsData:Observable<Bool>=Observable(false)
     var mealResponse = [Meal]()
+    
     func getMeals(mealCategory:String){
-        NetworkManeger.getInstance().getMeals(with: mealCategory) {  [weak self] mealResponse in
+        var category = mealCategory
+        if category == "popular" {
+            category = "drinks"
+        }
+        NetworkManeger.getInstance().getMeals(with: category) {  [weak self] mealResponse in
             switch mealResponse {
             case .success(let data):
                 if let mealResponse = data {

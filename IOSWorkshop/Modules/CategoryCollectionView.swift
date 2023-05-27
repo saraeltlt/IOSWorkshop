@@ -43,7 +43,9 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         self.changeSelectedCellBackground(index: indexPath.row)
-        viewModel?.getMeals(mealCategory: categoryArray[indexPath.row].title.lowercased())
+        
+        var category = categoryArray[indexPath.row].title.lowercased()
+        viewModel?.getMeals(mealCategory: category)
     }
 }
 
