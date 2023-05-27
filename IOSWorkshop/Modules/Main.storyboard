@@ -107,6 +107,7 @@
                                         <color key="color" name="Orange"/>
                                     </activityIndicatorView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="WNz-Vb-Sme" firstAttribute="centerX" secondItem="hc2-F1-4HF" secondAttribute="centerX" id="kGB-De-3ko"/>
                                     <constraint firstItem="WNz-Vb-Sme" firstAttribute="centerY" secondItem="hc2-F1-4HF" secondAttribute="centerY" id="yft-To-de2"/>
